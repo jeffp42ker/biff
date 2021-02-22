@@ -28,7 +28,7 @@
     key-infos))
 
 (defn latest-biff-sha []
-  (-> (bu/sh "git" "ls-remote" "https://github.com/jacobobryant/biff.git" "HEAD")
+  (-> (bu/sh "git" "ls-remote" "https://github.com/jeffp42ker/biff.git" "HEAD")
     (str/split #"\s+")
     first))
 
